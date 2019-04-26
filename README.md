@@ -9,3 +9,4 @@ We'll look at different ways to structure and package the code and how this impa
 
 There are several directories at the root of the project, each representing a different approach to architect the solution.
 * <code>monolithic</code> - all the code is in one directory, uses Java SWING api as the user interface, and CSV file to load/store the data. For a simple thorw away project, monolithic architecture works fine. However, if you plan on maintaining, extending, and reusing your code, monolithic architecture is a bad idea.
+* <code>layered</code> - the code in this directory is organized by the "horizontal layer": user interface, application, database. Each layer uses the layer that's directly below it.
